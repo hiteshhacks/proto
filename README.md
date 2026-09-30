@@ -44,7 +44,7 @@ SynapseSIH/
     │   ├── KpiCards.js          # 4 Metric cards (Continuous Trust, Dual-Model Risk, MoE, Cliff)
     │   ├── VariableFilters.js   # Coupled atmospheric net & MoE regime gating controls
     │   ├── TelemetryMap.js      # Interactive SVG canvas with continuous probability gradient & pins
-    │   ├── TimelineScrubber.js  # Day 1-10 continuous horizon scrubber & simulation player
+    │   ├── SpatioTemporalCone.js    # Spatio-Temporal Cone, +66h Landfall Cat 3 track & 3 Exceedance Panels
     │   ├── RegionInsights.js    # Dual-Model 'Now/Next' split, coupled weights & Blockchain cert
     │   ├── DataMatrixTable.js   # Sub-division matrix, Trajectory alerts, Blockchain ledger & JSON API
     │   └── Footer.js            # Operational status & engine metadata

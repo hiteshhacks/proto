@@ -8,7 +8,7 @@ import { renderAlertBanner } from './components/AlertBanner.js';
 import { renderKpiCards } from './components/KpiCards.js';
 import { renderVariableFilters } from './components/VariableFilters.js';
 import { renderTelemetryMap } from './components/TelemetryMap.js';
-import { renderTimelineScrubber } from './components/TimelineScrubber.js';
+import { renderSpatioTemporalCone } from './components/SpatioTemporalCone.js';
 import { renderRegionInsights } from './components/RegionInsights.js';
 import { renderDataMatrixTable } from './components/DataMatrixTable.js';
 import { renderFooter } from './components/Footer.js';
@@ -26,7 +26,7 @@ class App {
     renderKpiCards(document.getElementById('app-kpi-cards'));
     renderVariableFilters(document.getElementById('app-variable-filters'));
     renderTelemetryMap(document.getElementById('app-telemetry-map'));
-    renderTimelineScrubber(document.getElementById('app-timeline-scrubber'));
+    renderSpatioTemporalCone(document.getElementById('app-spatio-temporal-track'));
     renderRegionInsights(document.getElementById('app-region-insights'));
     renderDataMatrixTable(document.getElementById('app-data-matrix'));
     renderFooter(document.getElementById('app-footer'));
@@ -40,7 +40,7 @@ class App {
       }
     });
 
-    console.info('⚡ ForecastGuard AI initialized successfully in modular mode.');
+    console.info('⚡ Synapse AI initialized successfully with Spatio-Temporal Cone & Track Trajectory.');
   }
 }
 
