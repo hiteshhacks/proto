@@ -117,38 +117,57 @@ export function renderTelemetryMap(container) {
             <path d="M 170,290 Q 280,305 440,260" fill="none" stroke="#707881" stroke-width="0.8" stroke-dasharray="2 3" opacity="0.6"></path>
           </g>
 
-          <!-- Interactive Callout Pins -->
-          <!-- Pin: Odisha & Bay (Dual-Model Highlight) -->
-          <g class="cursor-pointer map-callout-pin" data-sector="odisha" transform="translate(385, 300)">
-            <circle cx="0" cy="0" r="10" fill="#ba1a1a" fill-opacity="0.25" class="animate-ping"></circle>
-            <circle cx="0" cy="0" r="5" fill="#ba1a1a"></circle>
-            <rect x="12" y="-22" width="176" height="42" rx="6" fill="#ffffff" stroke="#bfc7d2" stroke-width="0.8" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.06))"></rect>
-            <text x="20" y="-8" class="fill-on-surface font-headline-sm text-[11px] font-bold">Bay &amp; Odisha Coast</text>
-            <text x="20" y="8" class="fill-error font-label-sm text-[10px] font-bold">P(Bust) 78% • 'Next' Divergence</text>
+          <!-- Interactive Callout Pins (Rock-Solid Flicker-Free Click & Hover Handlers) -->
+          <!-- Pin 1: Odisha & Bay (Dual-Model Highlight) -->
+          <g class="cursor-pointer map-callout-pin" data-sector="odisha" transform="translate(385, 300)" style="cursor: pointer;">
+            <!-- Transparent Solid Hit Area -->
+            <rect x="-10" y="-24" width="205" height="48" fill="transparent" style="pointer-events: all;"></rect>
+            <!-- Visual Elements (pointer-events: none to prevent mouse event thrashing) -->
+            <circle cx="0" cy="0" r="12" fill="#ba1a1a" fill-opacity="0.25" class="animate-ping" style="pointer-events: none;"></circle>
+            <circle cx="0" cy="0" r="6" fill="#ba1a1a" stroke="#ffffff" stroke-width="2" style="pointer-events: none;"></circle>
+            <rect x="12" y="-22" width="180" height="44" rx="6" fill="#ffffff" stroke="#bfc7d2" stroke-width="1" class="pin-card-bg transition-colors" filter="drop-shadow(0 2px 5px rgba(0,0,0,0.08))" style="pointer-events: none;"></rect>
+            <text x="22" y="-7" class="fill-on-surface font-headline-sm text-[11px] font-bold" style="pointer-events: none;">Bay &amp; Odisha Coast</text>
+            <text x="22" y="9" class="fill-error font-label-sm text-[10px] font-bold" style="pointer-events: none;">P(Bust) 78% • 'Next' Divergence</text>
+            <circle cx="180" cy="0" r="4" fill="#ba1a1a" class="pin-active-dot hidden" style="pointer-events: none;"></circle>
           </g>
 
-          <!-- Pin: Western Himalayas (Sector 2) -->
-          <g class="cursor-pointer map-callout-pin" data-sector="himalayas" transform="translate(285, 90)">
-            <circle cx="0" cy="0" r="4" fill="#825100"></circle>
-            <rect x="12" y="-18" width="150" height="34" rx="6" fill="#ffffff" stroke="#bfc7d2" stroke-width="0.8"></rect>
-            <text x="18" y="-6" class="fill-on-surface font-headline-sm text-[10px] font-bold">Western Himalayas</text>
-            <text x="18" y="8" class="fill-tertiary font-label-sm text-[9px] font-bold">P(Bust) 65% • MoE Orography</text>
+          <!-- Pin 2: Western Himalayas (Sector 2) -->
+          <g class="cursor-pointer map-callout-pin" data-sector="himalayas" transform="translate(285, 90)" style="cursor: pointer;">
+            <!-- Transparent Solid Hit Area -->
+            <rect x="-10" y="-20" width="180" height="42" fill="transparent" style="pointer-events: all;"></rect>
+            <!-- Visual Elements -->
+            <circle cx="0" cy="0" r="10" fill="#825100" fill-opacity="0.2" class="animate-ping" style="pointer-events: none;"></circle>
+            <circle cx="0" cy="0" r="5" fill="#825100" stroke="#ffffff" stroke-width="1.5" style="pointer-events: none;"></circle>
+            <rect x="12" y="-18" width="158" height="38" rx="6" fill="#ffffff" stroke="#bfc7d2" stroke-width="1" class="pin-card-bg transition-colors" filter="drop-shadow(0 2px 5px rgba(0,0,0,0.08))" style="pointer-events: none;"></rect>
+            <text x="20" y="-5" class="fill-on-surface font-headline-sm text-[10px] font-bold" style="pointer-events: none;">Western Himalayas</text>
+            <text x="20" y="9" class="fill-tertiary font-label-sm text-[9px] font-bold" style="pointer-events: none;">P(Bust) 65% • MoE Orography</text>
+            <circle cx="158" cy="1" r="3.5" fill="#825100" class="pin-active-dot hidden" style="pointer-events: none;"></circle>
           </g>
 
-          <!-- Pin: Gujarat (Sector 3) -->
-          <g class="cursor-pointer map-callout-pin" data-sector="gujarat" transform="translate(165, 220)">
-            <circle cx="0" cy="0" r="3.5" fill="#00714d"></circle>
-            <rect x="-132" y="10" width="142" height="28" rx="6" fill="#ffffff" stroke="#bfc7d2" stroke-width="0.8"></rect>
-            <text x="-126" y="22" class="fill-on-surface font-headline-sm text-[10px] font-bold">Gujarat Coastal</text>
-            <text x="-126" y="32" class="fill-secondary font-label-sm text-[9px] font-bold">P(Bust) 42% • Coupled Inversion</text>
+          <!-- Pin 3: Gujarat (Sector 3) -->
+          <g class="cursor-pointer map-callout-pin" data-sector="gujarat" transform="translate(165, 220)" style="cursor: pointer;">
+            <!-- Transparent Solid Hit Area -->
+            <rect x="-140" y="-10" width="155" height="46" fill="transparent" style="pointer-events: all;"></rect>
+            <!-- Visual Elements -->
+            <circle cx="0" cy="0" r="10" fill="#00714d" fill-opacity="0.2" class="animate-ping" style="pointer-events: none;"></circle>
+            <circle cx="0" cy="0" r="4.5" fill="#00714d" stroke="#ffffff" stroke-width="1.5" style="pointer-events: none;"></circle>
+            <rect x="-136" y="8" width="150" height="32" rx="6" fill="#ffffff" stroke="#bfc7d2" stroke-width="1" class="pin-card-bg transition-colors" filter="drop-shadow(0 2px 5px rgba(0,0,0,0.08))" style="pointer-events: none;"></rect>
+            <text x="-128" y="21" class="fill-on-surface font-headline-sm text-[10px] font-bold" style="pointer-events: none;">Gujarat Coastal</text>
+            <text x="-128" y="32" class="fill-secondary font-label-sm text-[9px] font-bold" style="pointer-events: none;">P(Bust) 42% • Coupled Inversion</text>
+            <circle cx="4" cy="24" r="3.5" fill="#00714d" class="pin-active-dot hidden" style="pointer-events: none;"></circle>
           </g>
 
-          <!-- Pin: Andhra Coast / Peninsula -->
-          <g class="cursor-pointer map-callout-pin" data-sector="peninsula" transform="translate(275, 420)">
-            <circle cx="0" cy="0" r="3" fill="#006194"></circle>
-            <rect x="8" y="-16" width="128" height="30" rx="5" fill="#131b2e" opacity="0.9"></rect>
-            <text x="14" y="-4" class="font-label-sm text-[9px] font-bold" fill="#ffffff">Peninsular Interior</text>
-            <text x="14" y="8" class="font-label-sm text-[9px] font-bold" fill="#6cf8bb">Trust: 84% (Low Continuous Risk)</text>
+          <!-- Pin 4: Andhra Coast / Peninsula -->
+          <g class="cursor-pointer map-callout-pin" data-sector="peninsula" transform="translate(275, 420)" style="cursor: pointer;">
+            <!-- Transparent Solid Hit Area -->
+            <rect x="-10" y="-18" width="165" height="40" fill="transparent" style="pointer-events: all;"></rect>
+            <!-- Visual Elements -->
+            <circle cx="0" cy="0" r="9" fill="#006194" fill-opacity="0.2" class="animate-ping" style="pointer-events: none;"></circle>
+            <circle cx="0" cy="0" r="4" fill="#006194" stroke="#ffffff" stroke-width="1.5" style="pointer-events: none;"></circle>
+            <rect x="8" y="-16" width="146" height="34" rx="5" fill="#131b2e" stroke="#006194" stroke-width="1" class="pin-card-bg transition-colors" opacity="0.95" style="pointer-events: none;"></rect>
+            <text x="16" y="-3" class="font-label-sm text-[9px] font-bold" fill="#ffffff" style="pointer-events: none;">Peninsular Interior</text>
+            <text x="16" y="9" class="font-label-sm text-[9px] font-bold" fill="#6cf8bb" style="pointer-events: none;">Trust: 84% (Low Bust Risk)</text>
+            <circle cx="144" cy="1" r="3.5" fill="#6cf8bb" class="pin-active-dot hidden" style="pointer-events: none;"></circle>
           </g>
         </svg>
 
@@ -169,14 +188,81 @@ export function renderTelemetryMap(container) {
     </div>
   `;
 
-  // Attach interactive click on pins to select sector
-  container.querySelectorAll('.map-callout-pin').forEach(pin => {
-    pin.addEventListener('click', () => {
-      const sectorId = pin.dataset.sector;
-      if (sectorId) {
-        appState.setSelectedSector(sectorId);
+  // Helper to highlight active selected sector pin cleanly
+  const updateActivePinHighlight = (selectedSectorId) => {
+    container.querySelectorAll('.map-callout-pin').forEach(pin => {
+      const sectorAttr = pin.getAttribute('data-sector');
+      const isSelected = sectorAttr === selectedSectorId;
+      const rect = pin.querySelector('.pin-card-bg');
+      const activeDot = pin.querySelector('.pin-active-dot');
+
+      if (rect) {
+        if (isSelected) {
+          rect.setAttribute('stroke', '#006194');
+          rect.setAttribute('stroke-width', '2.5');
+          if (sectorAttr === 'peninsula') {
+            rect.setAttribute('fill', '#0e2038');
+          } else {
+            rect.setAttribute('fill', '#f0f7ff');
+          }
+          if (activeDot) activeDot.classList.remove('hidden');
+        } else {
+          if (sectorAttr === 'peninsula') {
+            rect.setAttribute('stroke', '#006194');
+            rect.setAttribute('stroke-width', '1');
+            rect.setAttribute('fill', '#131b2e');
+          } else {
+            rect.setAttribute('stroke', '#bfc7d2');
+            rect.setAttribute('stroke-width', '1');
+            rect.setAttribute('fill', '#ffffff');
+          }
+          if (activeDot) activeDot.classList.add('hidden');
+        }
       }
     });
+  };
+
+  // Initial highlight with current state
+  const currentSectorId = appState.getState().selectedSectorId || 'odisha';
+  updateActivePinHighlight(currentSectorId);
+
+  // Attach hover styles & rock-solid interactive click on pins
+  container.querySelectorAll('.map-callout-pin').forEach(pin => {
+    const rect = pin.querySelector('.pin-card-bg');
+    const sectorAttr = pin.getAttribute('data-sector');
+
+    // Stable hover effects without any jitter
+    pin.addEventListener('mouseenter', () => {
+      if (rect && appState.getState().selectedSectorId !== sectorAttr) {
+        rect.setAttribute('stroke', '#006194');
+        rect.setAttribute('stroke-width', '1.8');
+      }
+    });
+
+    pin.addEventListener('mouseleave', () => {
+      if (rect && appState.getState().selectedSectorId !== sectorAttr) {
+        rect.setAttribute('stroke', sectorAttr === 'peninsula' ? '#006194' : '#bfc7d2');
+        rect.setAttribute('stroke-width', '1');
+      }
+    });
+
+    // Direct, reliable click event
+    pin.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const sectorId = pin.getAttribute('data-sector');
+      if (sectorId) {
+        appState.setSelectedSector(sectorId);
+        updateActivePinHighlight(sectorId);
+      }
+    });
+  });
+
+  // Subscribe to sector changes to keep pin highlight in sync
+  appState.subscribe('sectorChanged', (sector) => {
+    if (sector && sector.id) {
+      updateActivePinHighlight(sector.id);
+    }
   });
 
   // Layer toggle listener
