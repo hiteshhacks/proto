@@ -92,14 +92,14 @@ export function renderTrajectoryFallbackView(container) {
                     <line x1="405" y1="0" x2="405" y2="340"></line>
                   </g>
 
-                  <!-- Coastline -->
-                  <path d="M 0,0 L 190,0 L 175,90 L 155,160 L 130,230 L 70,300 L 0,340 Z" fill="#d9e5ec" stroke="#9bb6c7" stroke-width="1.5"></path>
-                  <path d="M 370,0 L 420,90 L 470,180 L 540,240 L 540,0 Z" fill="#d9e5ec" stroke="#9bb6c7" stroke-width="1.5"></path>
+                  <!-- Accurate East Coastline of India & Myanmar -->
+                  <path d="M 0,0 L 210,0 C 190,40 180,85 160,130 C 145,170 135,215 110,260 C 85,300 50,330 0,340 Z" fill="#d9e5ec" stroke="#9bb6c7" stroke-width="1.6"></path>
+                  <path d="M 370,0 C 400,60 440,135 480,195 L 540,240 L 540,0 Z" fill="#d9e5ec" stroke="#9bb6c7" stroke-width="1.6"></path>
 
                   <!-- Coastal Labels -->
                   <text x="50" y="90" class="fill-[#708a99] font-label-md text-[10px] font-bold uppercase">West Bengal</text>
-                  <text x="35" y="180" class="fill-[#708a99] font-label-md text-[10px] font-bold uppercase">Odisha Coast</text>
-                  <text x="15" y="270" class="fill-[#708a99] font-label-md text-[9px] font-bold uppercase">Andhra Coast</text>
+                  <text x="40" y="180" class="fill-[#708a99] font-label-md text-[10px] font-bold uppercase">Odisha Coast</text>
+                  <text x="20" y="270" class="fill-[#708a99] font-label-md text-[9px] font-bold uppercase">Andhra Coast</text>
 
                   <!-- Fallback Verification Uncertainty Corridor -->
                   <path d="M 160,290 C 200,260 250,200 310,140 C 360,95 420,55 470,40 C 430,75 360,140 290,210 C 230,270 180,310 160,290 Z" fill="url(#fallbackCorridorGrad)"></path>

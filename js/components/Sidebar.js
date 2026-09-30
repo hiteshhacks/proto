@@ -9,9 +9,8 @@ export function renderSidebar(container) {
   const pipelineStages = [
     { id: 'bust-targeting-map', label: '1. Continuous Bust Map', icon: 'radar', active: true, tag: 'Stage 6' },
     { id: 'dual-model-learning', label: "2. Dual-Model 'Now/Next'", icon: 'model_training', active: false, tag: 'Stage 3' },
-    { id: 'coupled-encoder', label: '3. Coupled Atmospheric Net', icon: 'cyclone', active: false, tag: 'Stage 3' },
-    { id: 'regime-aware-fusion', label: '4. Regime Gating (MoE)', icon: 'hub', active: false, tag: 'Stage 4' },
-    { id: 'trajectory-verification', label: '5. Trajectory Fallback', icon: 'route', active: false, tag: 'Stage 5' }
+    { id: 'regime-aware-fusion', label: '3. Regime Gating (MoE)', icon: 'hub', active: false, tag: 'Stage 4' },
+    { id: 'trajectory-verification', label: '4. Trajectory Fallback', icon: 'route', active: false, tag: 'Stage 5' }
   ];
 
   const verificationStages = [

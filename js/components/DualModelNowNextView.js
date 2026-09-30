@@ -94,14 +94,14 @@ export function renderDualModelNowNextView(container) {
                   <line x1="300" y1="0" x2="300" y2="300"></line>
                 </g>
 
-                <!-- Coastline -->
-                <path d="M 0,0 L 140,0 L 120,80 L 110,140 L 90,210 L 40,280 L 0,300 Z" fill="#d9e5ec" stroke="#9bb6c7" stroke-width="1.5"></path>
-                <path d="M 280,0 L 320,80 L 360,160 L 400,200 L 400,0 Z" fill="#d9e5ec" stroke="#9bb6c7" stroke-width="1.5"></path>
+                <!-- Accurate East Coastline of India & Myanmar -->
+                <path d="M 0,0 L 165,0 C 150,35 140,70 125,105 C 110,140 100,180 85,220 C 70,255 45,285 0,300 Z" fill="#d9e5ec" stroke="#9bb6c7" stroke-width="1.6"></path>
+                <path d="M 280,0 C 310,60 345,130 380,180 L 400,210 L 400,0 Z" fill="#d9e5ec" stroke="#9bb6c7" stroke-width="1.6"></path>
 
                 <!-- Labels -->
-                <text x="30" y="80" class="fill-[#708a99] font-label-md text-[10px] font-bold uppercase">Odisha Coast</text>
+                <text x="35" y="80" class="fill-[#708a99] font-label-md text-[10px] font-bold uppercase">West Bengal / Odisha</text>
                 <text x="18" y="190" class="fill-[#708a99] font-label-md text-[9px] font-bold uppercase">Andhra Coast</text>
-                <text x="210" y="40" class="fill-[#708a99] font-label-md text-[10px] font-bold uppercase">Bay of Bengal</text>
+                <text x="220" y="40" class="fill-[#708a99] font-label-md text-[10px] font-bold uppercase">Bay of Bengal</text>
 
                 <!-- Present Vortex Core Blob -->
                 <circle cx="210" cy="170" r="85" fill="url(#vortexCoreGrad)"></circle>
@@ -195,12 +195,12 @@ export function renderDualModelNowNextView(container) {
                   <line x1="300" y1="0" x2="300" y2="300"></line>
                 </g>
 
-                <!-- Coastline -->
-                <path d="M 0,0 L 140,0 L 120,80 L 110,140 L 90,210 L 40,280 L 0,300 Z" fill="#d9e5ec" stroke="#9bb6c7" stroke-width="1.5"></path>
-                <path d="M 280,0 L 320,80 L 360,160 L 400,200 L 400,0 Z" fill="#d9e5ec" stroke="#9bb6c7" stroke-width="1.5"></path>
+                <!-- Accurate East Coastline of India & Myanmar -->
+                <path d="M 0,0 L 165,0 C 150,35 140,70 125,105 C 110,140 100,180 85,220 C 70,255 45,285 0,300 Z" fill="#d9e5ec" stroke="#9bb6c7" stroke-width="1.6"></path>
+                <path d="M 280,0 C 310,60 345,130 380,180 L 400,210 L 400,0 Z" fill="#d9e5ec" stroke="#9bb6c7" stroke-width="1.6"></path>
 
                 <!-- Labels -->
-                <text x="30" y="80" class="fill-[#708a99] font-label-md text-[10px] font-bold uppercase">Odisha Coast</text>
+                <text x="35" y="80" class="fill-[#708a99] font-label-md text-[10px] font-bold uppercase">West Bengal / Odisha</text>
                 <text x="18" y="190" class="fill-[#708a99] font-label-md text-[9px] font-bold uppercase">Andhra Coast</text>
 
                 <!-- Divergent Evolutionary Cone Envelope -->
