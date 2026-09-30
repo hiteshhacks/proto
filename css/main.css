@@ -1,0 +1,111 @@
+/* ==========================================================================
+   ForecastGuard AI - Custom Core Styles & Animations
+   ========================================================================== */
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Hide scrollbars where requested while retaining smooth scrolling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(112, 120, 129, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(112, 120, 129, 0.45);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Pulse Hazard Animation for Map Overlays */
+@keyframes hazardPulse {
+  0%, 100% {
+    opacity: 0.9;
+    stroke-width: 2px;
+  }
+  50% {
+    opacity: 0.35;
+    stroke-width: 3.5px;
+  }
+}
+
+.hazard-polygon-pulse {
+  animation: hazardPulse 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Radar Sweep Line Animation for Canvas */
+@keyframes radarSweep {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.radar-sweep {
+  transform-origin: center;
+  animation: radarSweep 8s linear infinite;
+}
+
+/* Map Interactive Hover Transitions */
+.map-callout-pin {
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.2s ease;
+}
+.map-callout-pin:hover {
+  transform: translateY(-3px) scale(1.05);
+  filter: drop-shadow(0 6px 12px rgba(19, 27, 46, 0.15));
+}
+
+/* Active Day Indicator highlight */
+.day-pill-active {
+  background-color: #006194 !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 10px rgba(0, 97, 148, 0.35);
+  transform: translateY(-1px);
+}
+
+/* Smooth Tab Transitions */
+.tab-pane {
+  display: none;
+  animation: fadeIn 0.25s ease-in-out;
+}
+.tab-pane.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
