@@ -580,7 +580,7 @@ export function renderTelemetryMap(container) {
             <!-- Gujarat -->
             <circle
               cx="165"
-              cy="220"
+              cy="265"
               r="42"
               fill="url(#bustGradientGujarat)">
             </circle>
@@ -588,7 +588,7 @@ export function renderTelemetryMap(container) {
 
             <!-- Western Himalayas -->
             <ellipse
-              cx="285"
+              cx="238"
               cy="90"
               rx="48"
               ry="30"
@@ -598,7 +598,7 @@ export function renderTelemetryMap(container) {
 
             <!-- Odisha / Bay of Bengal -->
             <ellipse
-              cx="385"
+              cx="345"
               cy="300"
               rx="65"
               ry="50"
@@ -616,7 +616,8 @@ export function renderTelemetryMap(container) {
 
             <!-- Odisha Hazard -->
             <polygon
-              points="350,270 420,285 435,330 380,345 345,310"
+              points="350,270 420,285 435,330 345,345 345,310"
+               transform="translate(-50,-20)"
               fill="none"
               stroke="#ba1a1a"
               stroke-width="2"
@@ -628,6 +629,7 @@ export function renderTelemetryMap(container) {
             <!-- Himalaya Hazard -->
             <polygon
               points="255,80 320,70 330,105 265,115"
+                transform="translate(-50,3)"
               fill="none"
               stroke="#825100"
               stroke-width="1.8"
@@ -671,7 +673,7 @@ export function renderTelemetryMap(container) {
           <g
             class="cursor-pointer map-callout-pin"
             data-sector="odisha"
-            transform="translate(385, 300)"
+            transform="translate(345, 300)"
             style="cursor:pointer;">
 
             <!-- Hit Area -->
@@ -761,7 +763,7 @@ export function renderTelemetryMap(container) {
           <g
             class="cursor-pointer map-callout-pin"
             data-sector="himalayas"
-            transform="translate(285, 90)"
+            transform="translate(245, 90)"
             style="cursor:pointer;">
 
             <rect
@@ -848,7 +850,7 @@ export function renderTelemetryMap(container) {
           <g
             class="cursor-pointer map-callout-pin"
             data-sector="gujarat"
-            transform="translate(165, 220)"
+            transform="translate(165, 265)"
             style="cursor:pointer;">
 
             <rect
@@ -976,8 +978,8 @@ export function renderTelemetryMap(container) {
               width="146"
               height="34"
               rx="5"
-              fill="#131b2e"
-              stroke="#006194"
+              fill="#ffffff"
+              stroke="#bfc7d2"
               stroke-width="1"
               class="pin-card-bg"
               opacity="0.95"
@@ -988,8 +990,7 @@ export function renderTelemetryMap(container) {
             <text
               x="16"
               y="-3"
-              class="font-label-sm text-[9px] font-bold"
-              fill="#ffffff"
+              class="font-label-sm text-[9px] font-bold fill-on-surface"
               style="pointer-events:none;">
               Peninsular Interior
             </text>
@@ -998,8 +999,7 @@ export function renderTelemetryMap(container) {
             <text
               x="16"
               y="9"
-              class="font-label-sm text-[9px] font-bold"
-              fill="#6cf8bb"
+              class="font-label-sm text-[9px] font-bold fill-secondary"
               style="pointer-events:none;">
               Trust: 84% (Low Bust Risk)
             </text>
@@ -1105,7 +1105,7 @@ export function renderTelemetryMap(container) {
 
               rect.setAttribute(
                 'fill',
-                '#0e2038'
+                '#e1e4e9ff'
               );
 
             } else {
@@ -1142,7 +1142,7 @@ export function renderTelemetryMap(container) {
 
               rect.setAttribute(
                 'fill',
-                '#131b2e'
+                '#e8ebf1ff'
               );
 
             } else {

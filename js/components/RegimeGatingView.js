@@ -103,17 +103,24 @@ export function renderRegimeGatingView(container) {
                   <text x="440" y="380" class="fill-outline/50 font-label-md text-[11px] font-bold tracking-widest uppercase">Bay of Bengal</text>
                   <text x="240" y="525" class="fill-outline/50 font-label-md text-[11px] font-bold tracking-widest uppercase">Indian Ocean</text>
 
-                  <!-- High-Precision Geographically Accurate Map of India (Official Survey Alignment) -->
-                  <g id="regime-india-landmass-group">
-                    <!-- India Mainland -->
-                    <path id="regime-india-mainland" d="M 280,24 C 292,22 308,26 320,38 C 328,46 335,62 334,78 C 333,88 325,98 324,110 C 328,120 345,130 365,140 C 385,150 405,160 425,170 C 438,175 448,182 458,188 C 460,184 462,170 468,170 C 474,170 476,184 480,188 C 488,188 500,186 512,184 C 520,178 532,158 548,152 C 560,148 574,158 572,172 C 570,184 558,198 548,210 C 542,222 538,236 532,252 C 528,264 524,282 516,294 C 510,300 504,298 502,286 C 498,272 492,260 484,260 C 476,260 472,270 466,276 C 472,255 484,250 494,244 C 496,236 478,232 466,234 C 454,242 444,262 438,284 C 435,298 428,312 422,320 C 412,332 396,352 380,374 C 370,388 358,408 346,430 C 336,446 322,468 310,488 C 304,500 296,508 290,508 C 284,508 280,500 276,482 C 270,462 264,432 256,396 C 250,364 242,330 232,298 C 225,272 218,248 210,230 C 212,222 214,212 204,210 C 192,210 172,212 155,222 C 142,232 135,248 144,258 C 156,266 178,266 190,256 C 196,248 200,240 204,236 C 182,232 162,230 146,235 C 134,238 126,232 132,220 C 118,222 106,212 108,200 C 112,188 132,182 152,185 C 164,188 174,180 180,170 C 188,155 194,140 204,122 C 214,108 226,92 236,75 C 244,62 250,50 260,40 C 266,32 274,26 280,24 Z" fill="#ffffff" stroke="#bfc7d2" stroke-width="1.6" stroke-linejoin="round"></path>
-                    
-                    <!-- Andaman and Nicobar Islands Archipelago -->
-                    <path id="regime-andaman-islands" d="M 495,392 C 498,388 501,396 499,414 C 497,424 494,435 496,444 C 498,450 494,453 492,446 C 490,436 493,414 495,392 Z M 493,458 C 496,458 496,464 493,464 C 490,464 490,458 493,458 Z M 500,476 C 503,476 503,482 500,482 C 497,482 497,476 500,476 Z M 504,488 C 507,488 507,494 504,494 C 501,494 501,488 504,488 Z M 508,502 C 512,499 515,508 512,516 C 509,519 506,510 508,502 Z" fill="#ffffff" stroke="#bfc7d2" stroke-width="1.2"></path>
-                    
-                    <!-- Lakshadweep Islands Archipelago -->
-                    <path id="regime-lakshadweep-islands" d="M 212,426 C 215,426 215,432 212,432 C 209,432 209,426 212,426 Z M 208,444 C 211,444 211,450 208,450 C 205,450 205,444 208,444 Z M 214,462 C 217,462 217,468 214,468 C 211,468 211,462 214,462 Z" fill="#ffffff" stroke="#bfc7d2" stroke-width="1.2"></path>
-                  </g>
+                  <!-- ACCURATE INDIA MAP -->
+
+<g
+  id="regime-india-landmass-group"
+  transform="translate(95, 8)">
+
+  <image
+    id="regime-india-accurate-map"
+    href="https://simplemaps.com/static/svg/country/in/admin1/in.svg"
+    x="0"
+    y="0"
+    width="430"
+    height="505"
+    preserveAspectRatio="xMidYMid meet"
+    style="pointer-events:none;">
+  </image>
+
+</g>
                   
                   <!-- Sri Lanka -->
                   <path d="M 314,488 C 322,482 328,495 325,508 C 320,514 313,506 314,488 Z" fill="#ffffff" stroke="#bfc7d2" stroke-width="1.2"></path>
