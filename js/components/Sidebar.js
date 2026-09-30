@@ -78,8 +78,10 @@ export function renderSidebar(container) {
         if (tag) tag.className = 'font-label-sm text-[9px] px-1.5 py-0.5 rounded bg-surface-container text-outline uppercase font-bold';
       });
       link.className = 'nav-item-link flex items-center justify-between px-space-md py-2.5 transition-all rounded-xl font-label-lg text-label-lg bg-primary-container text-on-primary-container font-semibold shadow-[0_2px_8px_rgba(0,123,185,0.2)]';
-      const activeTag = link.querySelector('span:last-child');
-      if (activeTag) activeTag.className = 'font-label-sm text-[9px] px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed uppercase font-bold';
+      const path = link.dataset.path;
+      if (path) {
+        appState.setActiveView(path);
+      }
     });
   });
 }

@@ -13,6 +13,7 @@ class StateManager {
       selectedLeadDay: 'D+4',
       selectedSectorId: 'odisha',
       activeTab: 'matrix', // 'matrix' | 'alerts' | 'json'
+      activeView: 'bust-targeting-map', // 'bust-targeting-map' | 'dual-model-learning' | etc.
       searchQuery: '',
       isSimulating: true,
       darkMode: false,
@@ -79,6 +80,11 @@ class StateManager {
   setActiveTab(tabId) {
     this.state.activeTab = tabId;
     this.notify('tabChanged', tabId);
+  }
+
+  setActiveView(viewId) {
+    this.state.activeView = viewId;
+    this.notify('viewChanged', viewId);
   }
 
   setSearchQuery(query) {

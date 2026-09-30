@@ -45,6 +45,9 @@ SynapseSIH/
     │   ├── VariableFilters.js   # Coupled atmospheric net & MoE regime gating controls
     │   ├── TelemetryMap.js      # Interactive SVG canvas with continuous probability gradient & pins
     │   ├── SpatioTemporalCone.js    # Spatio-Temporal Cone, +66h Landfall Cat 3 track & 3 Exceedance Panels
+    │   ├── DualModelNowNextView.js  # Dedicated Dual-Model 'Now' vs 'Next' maps, micro-telemetry & matrix
+    │   ├── RegimeGatingView.js      # Stage 4 Mixture of Experts (MoE) multi-type bust map & deep analytics
+    │   ├── TrajectoryFallbackView.js # Stage 5 Trajectory Fallback & Doppler Verification Engine view
     │   ├── RegionInsights.js    # Dual-Model 'Now/Next' split, coupled weights & Blockchain cert
     │   ├── DataMatrixTable.js   # Sub-division matrix, Trajectory alerts, Blockchain ledger & JSON API
     │   └── Footer.js            # Operational status & engine metadata

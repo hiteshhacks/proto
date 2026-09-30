@@ -33,8 +33,11 @@ export function renderAlertBanner(container) {
   const btn = container.querySelector('#view-sounding-btn');
   if (btn) {
     btn.addEventListener('click', () => {
-      const el = document.getElementById('region-insights-container');
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
+      // Find sidebar link and click it
+      const link = document.querySelector('.nav-item-link[data-path="dual-model-learning"]');
+      if (link) {
+        link.click();
+      }
     });
   }
 }
